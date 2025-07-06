@@ -7,7 +7,17 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index(){
+    public function dashboard(){
         return view('admin.dashboard');
+    }
+
+    public function index()
+    {
+        return view('admin.tenants');
+    }
+
+    public function show()
+    {
+        return view('admin.register-child');
     }
 }
