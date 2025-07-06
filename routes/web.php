@@ -7,6 +7,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+Route::get('/dashboard1', function () {
+    return 23435346546;
+})->middleware(['auth', 'role:admin'])->name('dashboard1');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

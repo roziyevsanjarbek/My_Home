@@ -17,6 +17,7 @@ class RoleMiddleware
     public function handle(Request $request, Closure $next, ...$roles)
     {
         $user = Auth::user();
+
         if (!$user || !$user->roles()->whereIn('name', $roles)->exists()) {
             abort(403, 'You do not have permission to access this page.');
         }
