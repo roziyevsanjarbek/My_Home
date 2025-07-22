@@ -57,21 +57,6 @@
                                     <input type="date" id="birthDate" name="birthDate" required
                                            class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                                 </div>
-
-                                <div>
-                                    <label for="gender" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Jinsi <span class="text-red-500">*</span>
-                                    </label>
-                                    <select id="gender" name="gender" required
-                                            class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                        <option value="">Jinsni tanlang</option>
-                                        <option value="female">Ayol</option>
-                                        <option value="male">Erkak</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                                 <div>
                                     <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
                                         Telefon Raqami <span class="text-red-500">*</span>
@@ -81,123 +66,9 @@
                                            placeholder="+998 90 123 45 67">
                                 </div>
 
-                                <div>
-                                    <label for="passportSeries" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Pasport Seriyasi <span class="text-red-500">*</span>
-                                    </label>
-                                    <input type="text" id="passportSeries" name="passportSeries" required
-                                           class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                           placeholder="AA1234567">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Education Information -->
-                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-6">Ta'lim Ma'lumotlari</h3>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="university" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Universitet <span class="text-red-500">*</span>
-                                    </label>
-                                    <select id="university" name="university" required
-                                            class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                        <option value="">Universitetni tanlang</option>
-                                        <option value="TATU">TATU - Toshkent Axborot Texnologiyalari Universiteti</option>
-                                        <option value="NUUz">NUUz - O'zbekiston Milliy Universiteti</option>
-                                        <option value="TDTU">TDTU - Toshkent Davlat Texnika Universiteti</option>
-                                        <option value="UzMU">UzMU - O'zbekiston Milliy Universiteti</option>
-                                        <option value="TIMI">TIMI - Toshkent Irrigatsiya va Melioratsiya Instituti</option>
-                                        <option value="other">Boshqa</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label for="faculty" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Fakultet <span class="text-red-500">*</span>
-                                    </label>
-                                    <input type="text" id="faculty" name="faculty" required
-                                           class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                           placeholder="Kompyuter injiniringi">
-                                </div>
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                                <div>
-                                    <label for="course" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Kurs <span class="text-red-500">*</span>
-                                    </label>
-                                    <select id="course" name="course" required
-                                            class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                        <option value="">Kursni tanlang</option>
-                                        <option value="1">1-kurs</option>
-                                        <option value="2">2-kurs</option>
-                                        <option value="3">3-kurs</option>
-                                        <option value="4">4-kurs</option>
-                                        <option value="5">5-kurs</option>
-                                        <option value="magistr">Magistratura</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label for="studentId" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Talaba ID Raqami
-                                    </label>
-                                    <input type="text" id="studentId" name="studentId"
-                                           class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                           placeholder="ST123456">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Parent Information -->
-                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-6">Ota-ona Ma'lumotlari</h3>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="parentName" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Ota-ona Ismi <span class="text-red-500">*</span>
-                                    </label>
-                                    <input type="text" id="parentName" name="parentName" required
-                                           class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                           placeholder="Karim Karimov">
-                                </div>
-
-                                <div>
-                                    <label for="parentPhone" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Ota-ona Telefoni <span class="text-red-500">*</span>
-                                    </label>
-                                    <input type="tel" id="parentPhone" name="parentPhone" required
-                                           class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                           placeholder="+998 91 234 56 78">
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                                <div>
-                                    <label for="parentRelation" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Qarindoshlik Darajasi <span class="text-red-500">*</span>
-                                    </label>
-                                    <select id="parentRelation" name="parentRelation" required
-                                            class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                        <option value="">Qarindoshlikni tanlang</option>
-                                        <option value="father">Ota</option>
-                                        <option value="mother">Ona</option>
-                                        <option value="guardian">Vasiy</option>
-                                        <option value="relative">Qarindosh</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label for="emergencyContact" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Favqulodda Holat Uchun Telefon
-                                    </label>
-                                    <input type="tel" id="emergencyContact" name="emergencyContact"
-                                           class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                           placeholder="+998 99 876 54 32">
-                                </div>
                             </div>
                         </div>
 
@@ -267,48 +138,6 @@
                             </div>
                         </div>
 
-                        <!-- Additional Information -->
-                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-6">Qo'shimcha Ma'lumotlar</h3>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="medicalConditions" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Tibbiy Holatlar
-                                    </label>
-                                    <textarea id="medicalConditions" name="medicalConditions" rows="3"
-                                              class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                              placeholder="Allergiya, dorilar yoki boshqa tibbiy ma'lumotlar..."></textarea>
-                                </div>
-
-                                <div>
-                                    <label for="specialRequests" class="block text-sm font-medium text-gray-700 mb-2">
-                                        Maxsus So'rovlar
-                                    </label>
-                                    <textarea id="specialRequests" name="specialRequests" rows="3"
-                                              class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                              placeholder="Maxsus ehtiyojlar yoki so'rovlar..."></textarea>
-                                </div>
-                            </div>
-
-                            <div class="mt-6">
-                                <label class="flex items-center">
-                                    <input type="checkbox" name="agreementAccepted" required class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
-                                    <span class="ml-2 text-sm text-gray-700">
-                                            Men ijara shartnomasini o'qidim va roziman <span class="text-red-500">*</span>
-                                        </span>
-                                </label>
-                            </div>
-
-                            <div class="mt-4">
-                                <label class="flex items-center">
-                                    <input type="checkbox" name="dataProcessingConsent" required class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
-                                    <span class="ml-2 text-sm text-gray-700">
-                                            Shaxsiy ma'lumotlarni qayta ishlashga roziman <span class="text-red-500">*</span>
-                                        </span>
-                                </label>
-                            </div>
-                        </div>
 
                         <!-- Form Actions -->
                         <div class="flex justify-end space-x-4">

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\HouseController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,6 +17,8 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
     Route::get('users/store', [UserController::class, 'show'])->name('admin.add-users.show');
     Route::get('/house', [HouseController::class, 'index'])->name('admin.house');
     Route::get('/house/store', [HouseController::class, 'show'])->name('admin.add-house.show');
+    Route::get('/payment-history', [PaymentController::class, 'index'])->name('admin.payment-history');
+    Route::get('/late-payments', [PaymentController::class, 'late'])->name('admin.late-payments');
     Route::get('/profile', [ProfileController::class, 'index'])->name('admin.profile');
 });
 
