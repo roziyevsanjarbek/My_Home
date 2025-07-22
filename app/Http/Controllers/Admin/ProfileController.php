@@ -9,7 +9,10 @@ class ProfileController extends Controller
 {
     public function index()
     {
-        return view('admin.profile');
+        $user = auth()->user();
+        return view('admin.profile', [
+            'user' => $user
+        ]);
     }
 
 }

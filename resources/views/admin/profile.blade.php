@@ -39,7 +39,7 @@
                                     </button>
                                 </div>
                                 <div class="ml-6 mt-16">
-                                    <h2 class="text-2xl font-bold text-gray-900">Akmal Karimov</h2>
+                                    <h2 class="text-2xl font-bold text-gray-900">{{ $user->name }}</h2>
                                     <p class="text-gray-600">Tizim Administratori</p>
                                     <div class="flex items-center mt-2 space-x-4">
                                             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">

@@ -94,7 +94,7 @@
                 Bu yerda siz barcha ijara jarayonlarini oson va samarali boshqarishingiz mumkin.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
-                <a href="index.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                <a href="{{ route('admin.dashboard') }}" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
                     🚀 Boshqaruv Paneliga O'tish
                 </a>
                 <button onclick="scrollToFeatures()" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors">
@@ -262,7 +262,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href="register-child.html" class="bg-blue-50 hover:bg-blue-100 rounded-xl p-6 text-center transition-colors card-hover group">
+            <a href="{{ route('admin.add-users.show') }}" class="bg-blue-50 hover:bg-blue-100 rounded-xl p-6 text-center transition-colors card-hover group">
                 <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <span class="text-white text-xl">👤</span>
                 </div>
@@ -270,7 +270,7 @@
                 <p class="text-sm text-gray-600">Yangi bola qo'shish</p>
             </a>
 
-            <a href="add-house.html" class="bg-green-50 hover:bg-green-100 rounded-xl p-6 text-center transition-colors card-hover group">
+            <a href="{{ route('admin.add-house.show') }}" class="bg-green-50 hover:bg-green-100 rounded-xl p-6 text-center transition-colors card-hover group">
                 <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <span class="text-white text-xl">🏠</span>
                 </div>
@@ -278,7 +278,7 @@
                 <p class="text-sm text-gray-600">Uy qo'shish</p>
             </a>
 
-            <a href="tenants-list.html" class="bg-purple-50 hover:bg-purple-100 rounded-xl p-6 text-center transition-colors card-hover group">
+            <a href="{{ route('admin.users') }}" class="bg-purple-50 hover:bg-purple-100 rounded-xl p-6 text-center transition-colors card-hover group">
                 <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <span class="text-white text-xl">📋</span>
                 </div>
@@ -286,7 +286,7 @@
                 <p class="text-sm text-gray-600">Ro'yxatni ko'rish</p>
             </a>
 
-            <a href="houses-list.html" class="bg-yellow-50 hover:bg-yellow-100 rounded-xl p-6 text-center transition-colors card-hover group">
+            <a href="{{ route('admin.house') }}" class="bg-yellow-50 hover:bg-yellow-100 rounded-xl p-6 text-center transition-colors card-hover group">
                 <div class="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <span class="text-white text-xl">🏘️</span>
                 </div>
@@ -308,7 +308,7 @@
             Ijara biznesingizni yangi darajaga olib chiqish uchun bizning tizimdan foydalanishni boshlang
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="index.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+            <a href="{{ route('admin.dashboard') }}" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
                 🚀 Boshqaruv Paneliga Kirish
             </a>
             <button class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors">
@@ -337,9 +337,9 @@
             <div>
                 <h4 class="text-lg font-semibold mb-4">Tezkor Havolalar</h4>
                 <ul class="space-y-2 text-gray-400">
-                    <li><a href="index.html" class="hover:text-white transition-colors">Bosh sahifa</a></li>
-                    <li><a href="tenants-list.html" class="hover:text-white transition-colors">Ijarachilar</a></li>
-                    <li><a href="houses-list.html" class="hover:text-white transition-colors">Uylar</a></li>
+                    <li><a href="/" class="hover:text-white transition-colors">Bosh sahifa</a></li>
+                    <li><a href="{{ route('admin.users') }}l" class="hover:text-white transition-colors">Ijarachilar</a></li>
+                    <li><a href="{{ route('admin.house') }}" class="hover:text-white transition-colors">Uylar</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Hisobotlar</a></li>
                 </ul>
             </div>
